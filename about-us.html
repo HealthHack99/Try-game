@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Quiz Website - About Us</title>
+      <link rel="stylesheet" href="style.css" />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+         />
+      <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+         crossorigin="anonymous"
+         ></script>
+   </head>
+   <body>
+      <main class="main">
+         <header class="header">
+            <a href="#" class="logo">Quiz.</a>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" id="bar" class="fa-solid fa-bars"></label>
+            <nav class="navbar">
+               <a href="index.html" >Home</a>
+               <a href="about-us.html" class="active">About Us</a>
+               <a href="services.html">Services</a>
+               <a href="contact-us.html">Contact Us</a>
+            </nav>
+         </header>
+
+         <div class="container">
+            <section class="quiz-section">
+               <div class="quiz-box">
+                  <h1></h1>
+                  <div class="quiz-header">
+                     <span></span>
+                     <span class="header-score"></span>
+                  </div>
+                  <h2 class="question-text"></h2>
+                  <div class="option-list"></div>
+                  <div class="quiz-footer">
+                     <span class="question-total"></span>
+                     <button class="next-btn"></button>
+                  </div>
+               </div>
+            </section>
+            <section class="home">
+               <div class="home-content">
+                  <h1>About Us</h1>
+                  <p>
+                     <strong>Codehal!</strong> is a top gaming quiz. This is a great learning platform for intermediate students.
+                  </p>
+                  <!-- Hidden content -->
+                  <div class="more-content" id="moreContent" style="display: none;">
+                     <p>
+                        <strong>Codehal!</strong> comprises 5 main science subjects:
+                     </p>
+                     <ul>
+                        <li>Mathematics</li>
+                        <li>Physics</li>
+                        <li>Chemistry</li>
+                        <li>Biology</li>
+                        <li>Computer Science</li>
+                     </ul>
+                     <p>
+                        Each subject option contains two levels:
+                     <ul>
+                        <li><strong>Level 1</strong> for beginners</li>
+                        <li><strong>Level 2</strong> for advanced learners</li>
+                     </ul>
+                     </p>
+                     <p>
+                        After completing both levels, students will have a good understanding of the mentioned subjects. Let's try it out, and good luck with the quiz!
+                     </p>
+                  </div>
+                  <button class="start-btn" id="toggleButton" onclick="toggleContent()">Read More</button>
+               </div>
+            </section>
+         </div>
+      </main>
+      <script>
+         function toggleContent() {
+             var moreContent = document.getElementById("moreContent");
+             var toggleButton = document.getElementById("toggleButton");
+
+             if (moreContent.style.display === "none") {
+                 moreContent.style.display = "block";  // Show content
+                 toggleButton.innerHTML = "Read Less"; // Change button text
+             } else {
+                 moreContent.style.display = "none";   // Hide content
+                 toggleButton.innerHTML = "Read More"; // Change button text
+             }
+         }
+      </script>
+   </body>
+</html>

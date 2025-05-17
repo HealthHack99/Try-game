@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Quiz Website - Contact Us</title>
+      <link rel="stylesheet" href="style.css" />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+         />
+      <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+         crossorigin="anonymous"
+         ></script>
+      <style>
+         *{
+         padding: 0px;
+         margin: 0px;
+         box-sizing: border-box;
+         font-family: sans-serif;
+         }
+         body{
+         background-color: #231e2e;
+         }
+         .container{
+         width:80%;
+         display:flex;
+         justify-content: center;
+         margin: 60px auto;
+         }
+         .contact{
+         width: 100%;
+         padding: 25px;
+         margin-top: 100px;
+         }
+         .content{
+         width: 100%;
+         padding: 25px;
+         margin-top: 10px;
+         }
+         .contact h1{
+         font-size: 35px;
+         margin-bottom: 30px;
+         color:#82104f;
+         }
+         .content h1{
+         font-size: 35px;
+         margin-top: 30px;
+         margin-bottom: 15px;
+         color:#82104f;
+         }
+         .content h2{
+         margin-top: 20px;
+         margin-bottom: 10px;
+         color: #82104f;
+         }
+         .content p{
+         margin-bottom: 15px;
+         }
+         .contact p{
+         color: #e1d9d9;
+         font-size: 17px;
+         line-height: 1px;
+         }
+         label{
+         color: #e6e1e1;
+         font-size: 17px;
+         display:block;
+         margin-top: 12px;
+         margin-bottom: 5px;
+         }
+         input,textarea{
+         width: 100%;
+         padding: 12px;
+         border-radius: 5px;
+         border: none;
+         outline: none;
+         }
+         button{
+         font-size: 17px;
+         background-color: rgb(218, 124, 171);
+         color: #fff;
+         border: none;
+         border-radius: 5px;
+         padding: 10px 20px;
+         cursor: pointer;
+         margin-top: 15px;
+         }
+         button:hover{
+         background-color: #82104f;
+         }
+         footer {
+            background-color: #82104f;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+         }
+         footer p {
+            margin: 0;
+         }
+         footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+         }
+         footer a:hover {
+            text-decoration: underline;
+         }
+         /* Added a map container */
+         .map {
+            width: 100%;
+            height: 400px;
+            margin: 30px auto;
+         }
+      </style>
+   </head>
+   <body class="bodyauto">
+      <main class="main">
+
+         <header class="header">
+            <a href="#" class="logo">Quiz.</a>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" id="bar" class="fa-solid fa-bars"></label>
+            <nav class="navbar">
+               <a href="index.html" >Home</a>
+               <a href="about-us.html">About Us</a>
+               <a href="services.html">Services</a>
+               <a href="contact-us.html"  class="active">Contact Us</a>
+            </nav>
+         </header>
+
+         <div class="container2">
+            <div class="contact">
+               <h1 align="center">Contact Us</h1>
+               <form>
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" id="name" required />
+                  <label for="email">Your Email</label>
+                  <input type="email" name="email" id="email" required />
+                  <label for="message">Message</label>
+                  <textarea name="message" id="message" required></textarea>
+                  <button type="submit">Send Message</button>
+               </form>
+            </div>
+            <div class="content">
+               <h1 align="center">Quiz Game</h1>
+               <p align="center">
+                  If you have any questions or need assistance, please don't hesitate to
+                  contact us using the information provided. We're here to help you!
+               </p>
+               <h1 align="center">Contact Information</h1>
+               <p align="center"><strong>Email:</strong> contact@example.com</p>
+               <p align="center"><strong>Phone:</strong> (123) 456-7898</p>
+               <p align="center">
+                  <strong>Address:</strong> 34 Street Name, City Name Here, United States
+               </p>
+            </div>
+         </div>
+
+         <!-- Location Map Section -->
+         <div class="map">
+            <iframe
+               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.3509045035994!2d67.05383337604886!3d24.954173141500014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb34100267e2fab%3A0x5cedad8106849d5e!2sAlkhidmat%20BANO%20QABIL%20Sakhi%20Hasan%20Campus!5e0!3m2!1sen!2s!4v1728207177092!5m2!1sen!2s"
+               width="100%"
+               height="100%"
+               style="border:0;"
+               allowfullscreen=""
+               loading="lazy"
+               referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+         </div>
+      </main>
+
+      <!-- Footer Section -->
+      <footer>
+         <p>Designed By Saima.<br>&copy; 2024 Quiz Website. All Rights Reserved.</p>
+         <p>
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Terms of Service</a>
+         </p>
+      </footer>
+   </body>
+</html>

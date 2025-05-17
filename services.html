@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Quiz Website - Services</title>
+      <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <style>
+         body {
+            background-color: #231e2e;
+         }
+         .container {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            margin: 60px auto;
+         }
+         .filters {
+            display: flex;
+            justify-content: space-between; /* Align Category and Subjects Filter horizontally */
+            margin-top: 50px;
+            width: 100%;
+         }
+         .filter, .content {
+            flex: 1;
+            padding: 0 20px;
+         }
+         .filter h3, .content h3 {
+            margin-bottom: 10px;
+            color: #fff;
+         }
+         #btns {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+         }
+         .content {
+            margin-top: 0; /* Remove margin to keep filters in same row */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+         }
+         .content h2 {
+            color: #82104f;
+         }
+         #root {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+         }
+         .subject-level-box {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Ensure 2x2 grid */
+            gap: 15px;
+            margin: 20px 0;
+         }.level-box {
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    text-align: center;
+    color: #000; /* Ensures text is black */
+}
+
+.level-box h3 {
+    color: #000; /* Sets the heading to black */
+}
+
+         .level-box img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+         }
+         button {
+            font-size: 17px;
+            background-color: rgb(218, 124, 171);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 15px;
+         }
+         button:hover {
+            background-color: #82104f;
+         }
+      </style>
+   </head>
+   <body>
+      <main class="main">
+         <header class="header">
+            <a href="#" class="logo">Quiz.</a>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" id="bar" class="fa-solid fa-bars"></label>
+            <nav class="navbar">
+               <a href="index.html" >Home</a>
+               <a href="about-us.html">About Us</a>
+               <a href="services.html" class="active">Services</a>
+               <a href="contact-us.html">Contact Us</a>
+            </nav>
+         </header>
+         <div class="container">
+            <div class="filters">
+               <div class="filter">
+                  <h3>Subjects</h3>
+                  <div id="btns"></div>
+               </div>
+               <div class="content">
+                  <h3>Courses</h3>
+                  <div id="root"></div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <script src="filter.js"></script>
+   </body>
+</html>
